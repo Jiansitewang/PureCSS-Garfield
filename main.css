@@ -31,8 +31,8 @@ body {
 .leftEye{
   position: absolute;
   border: 3px solid black;
-  height: 224px;
-  width: 150px;
+  height: 214px;
+  width: 130px;
   right: 50%;
   border-top-left-radius: 65% 50%;
   border-top-right-radius: 35% 15%;
@@ -44,8 +44,8 @@ body {
   border-top: 3px solid black;
   border-right: 3px solid black;
   border-bottom: 3px solid black;
-  height: 224px;
-  width: 150px;
+  height: 214px;
+  width: 130px;
   left: 50%;
   border-top-right-radius: 65% 50%;
   border-top-left-radius: 35% 15%;
@@ -59,7 +59,49 @@ body {
   border: 3px solid black;
   position: absolute;
   left: 50%;
-  top: 204px;
+  top: 198px;
   border-radius: 50%;
   margin-left: -28px;
+}
+.mustache-r1, .mustache-r2, .mustache-r3, .mustache-r4{
+  display: flex;
+  position: absolute;
+  top: 80px;
+  right: 0;
+}
+.mustache-r2{
+  top: 0;
+  right: 0;
+}
+.mustache-r2 > div{
+  width: 12px;
+  height: 55px;
+  background: black;
+  border-bottom-right-radius: 220%;
+  border-bottom-left-radius: 302%;
+  border-top-right-radius: 70px 140px;
+  border-top-left-radius: 10%;
+  margin-left: 1px;
+}
+.mustache-r1> div {
+  width: 12px;
+  height: 55px;
+  background: black;
+  border-bottom-right-radius: 220%;
+  border-bottom-left-radius: 302%;
+  border-top-right-radius: 70px 140px;
+  border-top-left-radius: 10%;
+  margin-left: 1px;
+}
+.mustache-r1 > div:nth-child(4){
+  transform: rotate(-15deg);
+}
+.mustache-r1 > div:nth-child(3){
+  transform: scale(0.8) rotate(-15deg);
+}
+.mustache-r1 > div:nth-child(2){
+  transform: scale(0.6) rotate(-15deg);
+}
+.mustache-r1 > div:nth-child(1){
+  transform: scale(0.3) rotate(-15deg);
 }
