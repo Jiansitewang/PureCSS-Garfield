@@ -69,9 +69,15 @@ body {
   top: 80px;
   right: 0;
 }
-.mustache-r2{
-  top: 0;
+.mustache-r1{
+  top: 80px;
   right: 0;
+  transform: rotate(-15deg);
+}
+.mustache-r2{
+  top: 17px;
+  right: 15px;
+  transform: rotate(-45deg);
 }
 .mustache-r2 > div{
   width: 12px;
@@ -81,8 +87,25 @@ body {
   border-bottom-left-radius: 302%;
   border-top-right-radius: 70px 140px;
   border-top-left-radius: 10%;
-  margin-left: 1px;
+
 }
+
+.mustache-r2 > div:nth-child(4){
+
+}
+.mustache-r2 > div:nth-child(3){
+  transform: scale(0.8);
+}
+.mustache-r2 > div:nth-child(2){
+  transform: scale(0.6);
+}
+.mustache-r2 > div:nth-child(1){
+  transform: scale(0.3);
+  margin-right: -2px;
+}
+
+
+
 .mustache-r1> div {
   width: 12px;
   height: 55px;
@@ -91,17 +114,18 @@ body {
   border-bottom-left-radius: 302%;
   border-top-right-radius: 70px 140px;
   border-top-left-radius: 10%;
-  margin-left: 1px;
+
 }
 .mustache-r1 > div:nth-child(4){
-  transform: rotate(-15deg);
+
 }
 .mustache-r1 > div:nth-child(3){
-  transform: scale(0.8) rotate(-15deg);
+  transform: scale(0.8);
 }
 .mustache-r1 > div:nth-child(2){
-  transform: scale(0.6) rotate(-15deg);
+  transform: scale(0.6);
 }
 .mustache-r1 > div:nth-child(1){
-  transform: scale(0.3) rotate(-15deg);
+  transform: scale(0.3);
+  margin-right: -2px;
 }
