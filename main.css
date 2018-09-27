@@ -44,7 +44,7 @@ body {
   height: 10px;
   position: absolute;
   background: black;
-  right: 0;
+  right: 4px;
   top: 173px;
   border-bottom-left-radius: 50% 100%;
   border-bottom-right-radius: 50% 100%;
@@ -69,9 +69,9 @@ body {
   position: absolute;
   height: 214px;
   width: 130px;
-  top: 172px;
+  top: 169px;
   right: 2px;
-  transform: rotate(3deg);
+  transform: rotate(4deg);
   background: white;
   z-index: -1;
 }
@@ -87,8 +87,45 @@ body {
   border-top-right-radius: 65% 50%;
   border-top-left-radius: 35% 15%;
   border-bottom-right-radius: 55% 50%;
-
+  overflow: hidden;
 }
+.rightEye .eyeball {
+  width: 24px;
+  height: 10px;
+  position: absolute;
+  background: black;
+  left: 4px;
+  top: 173px;
+  border-bottom-left-radius: 50% 100%;
+  border-bottom-right-radius: 50% 100%;
+  z-index: 1;
+}
+.rightEye::before{
+  content: '';
+  position: absolute;
+  height: 214px;
+  width: 130px;
+  top: -41px;
+  right: 10px;
+  transform: rotate(-3deg);
+  border-bottom: 4px solid black;
+
+  border-bottom-right-radius: 100px 5%;
+  border-top-left-radius: 0 5%;
+  border-top-right-radius: 0 5%;
+}
+.rightEye:after{
+  content: '';
+  position: absolute;
+  height: 214px;
+  width: 130px;
+  top: 168px;
+  right: -2px;
+  transform: rotate(-5deg);
+  background: white;
+  z-index: -1;
+}
+
 .nose{
   width: 56px;
   height: 34px;
