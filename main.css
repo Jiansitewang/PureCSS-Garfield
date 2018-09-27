@@ -203,3 +203,84 @@ body {
   transform: scale(0.3);
   margin-right: -2px;
 }
+
+.noseMustache-left{
+  position: relative;
+  top: 232px;
+  left: 36%;
+  width: 55px;
+  height: 14px;
+  transform: rotate(-35deg);
+  border: 3px solid black;
+  border-top: transparent;
+  border-right: transparent;
+  border-bottom: transparent;
+  background: #FFFD78;
+  border-top-left-radius: 50% 100%;
+  border-bottom-left-radius: 50% 100%;
+  z-index: -1;
+}
+.noseMustache-right{
+  position: relative;
+  top: 218px;
+  left: 49%;
+  width: 55px;
+  height: 14px;
+  transform: rotate(215deg);
+  border: 3px solid black;
+  border-top: transparent;
+  border-right: transparent;
+  border-bottom: transparent;
+  background: #FFFD78;
+  border-top-left-radius: 50% 100%;
+  border-bottom-left-radius: 50% 100%;
+  z-index: -1;
+}
+.noseMustache-left > div {
+  position: absolute;
+  width: 30px;
+  height: 3px;
+  background: black;
+  bottom: 0;
+  right: 0;
+}
+.noseMustache-right > div {
+  position: absolute;
+  width: 30px;
+  height: 3px;
+  background: black;
+  top: 0;
+  right: 0;
+}
+
+.leftCheek {
+  position: relative;
+  top: 178px;
+  left: 27%;
+  width: 70px;
+  height: 45px;
+  transform: rotate(-35deg);
+  background: #FFFD78;
+  border: 3px solid black;
+  /*border-right: transparent;*/
+  /*border-bottom: transparent;*/
+  border-top-left-radius: 60% 60%;
+  border-bottom-left-radius: 70% 80%;
+  z-index: -2;
+}
+
+.rightCheek {
+  position: relative;
+  top: 131px;
+  left: 54%;
+  width: 70px;
+  height: 45px;
+  transform: rotate(215deg);
+  background: #FFFD78;
+  border: 3px solid black;
+  /*border-right: transparent;*/
+  /*border-bottom: transparent;*/
+  border-top-left-radius: 60% 60%;
+  border-bottom-left-radius: 70% 80%;
+  z-index: -2;
+}
