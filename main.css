@@ -37,6 +37,43 @@ body {
   border-top-left-radius: 65% 50%;
   border-top-right-radius: 35% 15%;
   border-bottom-left-radius: 55% 50%;
+  overflow: hidden;
+}
+.leftEye .eyeball{
+  width: 24px;
+  height: 10px;
+  position: absolute;
+  background: black;
+  right: 0;
+  top: 173px;
+  border-bottom-left-radius: 50% 100%;
+  border-bottom-right-radius: 50% 100%;
+  z-index: 1;
+}
+.leftEye::before{
+  content: '';
+  position: absolute;
+  height: 214px;
+  width: 130px;
+  top: -41px;
+  right: -10px;
+  transform: rotate(3deg);
+  border-bottom: 4px solid black;
+
+  border-bottom-left-radius: 100px 5%;
+  border-top-left-radius: 0 5%;
+  border-top-right-radius: 0 5%;
+}
+.leftEye:after{
+  content: '';
+  position: absolute;
+  height: 214px;
+  width: 130px;
+  top: 172px;
+  right: 2px;
+  transform: rotate(3deg);
+  background: white;
+  z-index: -1;
 }
 .rightEye{
   position: absolute;
@@ -71,13 +108,13 @@ body {
 }
 .mustache-r1{
   top: 80px;
-  right: 0;
-  transform: rotate(-15deg);
+  right: 3px;
+  transform: rotate(-11deg);
 }
 .mustache-r2{
-  top: 17px;
-  right: 15px;
-  transform: rotate(-45deg);
+  top: 23px;
+  right: 25px;
+  transform: rotate(-30deg);
 }
 .mustache-r2 > div{
   width: 12px;
