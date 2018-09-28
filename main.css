@@ -14,7 +14,6 @@
 
 body {
   height: 100vh;
-  border: 1px solid green;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -25,7 +24,6 @@ body {
   position: relative;
   width: 370px;
   height: 310px;
-  border: 1px solid red;
 }
 
 .leftEye{
@@ -78,12 +76,13 @@ body {
 .rightEye{
   position: absolute;
   /*消除中间border重复部分*/
+  border-left: 3px solid black;
   border-top: 3px solid black;
   border-right: 3px solid black;
   border-bottom: 3px solid black;
   height: 214px;
   width: 130px;
-  left: 50%;
+  left: 49.5%;
   border-top-right-radius: 65% 50%;
   border-top-left-radius: 35% 15%;
   border-bottom-right-radius: 55% 50%;
