@@ -143,15 +143,16 @@ body {
   right: 0;
 }
 .mustache-r1{
-  top: 80px;
-  right: 3px;
-  transform: rotate(-6deg);
-}
+   top: 80px;
+   right: 3px;
+   transform: rotate(-6deg);
+ }
 .mustache-r2{
   top: 23px;
   right: 25px;
   transform: rotate(-30deg);
 }
+
 .mustache-r3{
   top: 154px;
   right: 4px;
