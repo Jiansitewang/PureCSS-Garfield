@@ -142,17 +142,26 @@ body {
   top: 80px;
   right: 0;
 }
+div.special, div.sm1, div.sm2, div.sm3, div.sm4{
+  width: 12px;
+  height: 55px;
+  background: black;
+  border-bottom-right-radius: 220%;
+  border-bottom-left-radius: 302%;
+  border-top-right-radius: 70px 140px;
+  border-top-left-radius: 10%;
+
+}
 .mustache-r1{
-   top: 80px;
-   right: 3px;
-   transform: rotate(-6deg);
- }
-.mustache-r2{
   top: 23px;
   right: 25px;
   transform: rotate(-30deg);
+ }
+.mustache-r2{
+  top: 80px;
+  right: 3px;
+  transform: rotate(-6deg);
 }
-
 .mustache-r3{
   top: 154px;
   right: 4px;
@@ -163,14 +172,12 @@ body {
   right: 49px;
   transform: rotate(46deg);
 }
-
 .mustache-l1{
   top: 23px;
   left: 25px;
   right: unset;
   transform: rotate(210deg);
 }
-
 .mustache-l2{
   top: 80px;
   left: 3px;
@@ -189,206 +196,23 @@ body {
   right: unset;
   transform: rotate(136deg);
 }
-
-.mustache-r2 > div{
-  width: 12px;
-  height: 55px;
-  background: black;
-  border-bottom-right-radius: 220%;
-  border-bottom-left-radius: 302%;
-  border-top-right-radius: 70px 140px;
-  border-top-left-radius: 10%;
-
-}
-
-.mustache-r2 > div:nth-child(4){
-
-}
-.mustache-r2 > div:nth-child(3){
-  transform: scale(0.8);
-}
-.mustache-r2 > div:nth-child(2){
-  transform: scale(0.6);
-}
-.mustache-r2 > div:nth-child(1){
+div.special{
   transform: scale(0.4);
   margin-right: -2px;
 }
-
-
-
-.mustache-r1> div {
-  width: 12px;
-  height: 55px;
-  background: black;
-  border-bottom-right-radius: 220%;
-  border-bottom-left-radius: 302%;
-  border-top-right-radius: 70px 140px;
-  border-top-left-radius: 10%;
-
-}
-.mustache-r1 > div:nth-child(4){
-
-}
-.mustache-r1 > div:nth-child(3){
-  transform: scale(0.8);
-}
-.mustache-r1 > div:nth-child(2){
-  transform: scale(0.6);
-}
-.mustache-r1 > div:nth-child(1){
+div.sm1{
   transform: scale(0.3);
   margin-right: -2px;
 }
-
-.mustache-r3> div {
-  width: 12px;
-  height: 55px;
-  background: black;
-  border-bottom-right-radius: 220%;
-  border-bottom-left-radius: 302%;
-  border-top-right-radius: 70px 140px;
-  border-top-left-radius: 10%;
-
-}
-.mustache-r3 > div:nth-child(4){
-
-}
-.mustache-r3 > div:nth-child(3){
-  transform: scale(0.8);
-}
-.mustache-r3 > div:nth-child(2){
+div.sm2{
   transform: scale(0.6);
 }
-.mustache-r3 > div:nth-child(1){
-  transform: scale(0.3);
-  margin-right: -2px;
-}
-
-.mustache-r4> div {
-  width: 12px;
-  height: 55px;
-  background: black;
-  border-bottom-right-radius: 220%;
-  border-bottom-left-radius: 302%;
-  border-top-right-radius: 70px 140px;
-  border-top-left-radius: 10%;
-
-}
-.mustache-r4 > div:nth-child(4){
-
-}
-.mustache-r4 > div:nth-child(3){
+div.sm3{
   transform: scale(0.8);
 }
-.mustache-r4 > div:nth-child(2){
-  transform: scale(0.6);
-}
-.mustache-r4 > div:nth-child(1){
-  transform: scale(0.3);
-  margin-right: -2px;
-}
 
-.mustache-l1> div {
-  width: 12px;
-  height: 55px;
-  background: black;
-  border-bottom-right-radius: 220%;
-  border-bottom-left-radius: 302%;
-  border-top-right-radius: 70px 140px;
-  border-top-left-radius: 10%;
-
-}
-.mustache-l1 > div:nth-child(4){
-
-}
-.mustache-l1 > div:nth-child(3){
-  transform: scale(0.8);
-}
-.mustache-l1 > div:nth-child(2){
-  transform: scale(0.6);
-}
-.mustache-l1 > div:nth-child(1){
-  transform: scale(0.4);
-  margin-right: -2px;
-}
-
-.mustache-l2> div {
-  width: 12px;
-  height: 55px;
-  background: black;
-  border-bottom-right-radius: 220%;
-  border-bottom-left-radius: 302%;
-  border-top-right-radius: 70px 140px;
-  border-top-left-radius: 10%;
-
-}
-.mustache-l2 > div:nth-child(4){
-
-}
-.mustache-l2 > div:nth-child(3){
-  transform: scale(0.8);
-}
-.mustache-l2 > div:nth-child(2){
-  transform: scale(0.6);
-}
-.mustache-l2 > div:nth-child(1){
-  transform: scale(0.3);
-  margin-right: -2px;
-}
-.mustache-l3> div {
-  width: 12px;
-  height: 55px;
-  background: black;
-  border-bottom-right-radius: 220%;
-  border-bottom-left-radius: 302%;
-  border-top-right-radius: 70px 140px;
-  border-top-left-radius: 10%;
-
-}
-.mustache-l3 > div:nth-child(4){
-
-}
-.mustache-l3 > div:nth-child(3){
-  transform: scale(0.8);
-}
-.mustache-l3 > div:nth-child(2){
-  transform: scale(0.6);
-}
-.mustache-l3 > div:nth-child(1){
-  transform: scale(0.3);
-  margin-right: -2px;
-}
-.mustache-l4> div {
-  width: 12px;
-  height: 55px;
-  background: black;
-  border-bottom-right-radius: 220%;
-  border-bottom-left-radius: 302%;
-  border-top-right-radius: 70px 140px;
-  border-top-left-radius: 10%;
-
-}
-.mustache-l4 > div:nth-child(4){
-
-}
-.mustache-l4 > div:nth-child(3){
-  transform: scale(0.8);
-}
-.mustache-l4 > div:nth-child(2){
-  transform: scale(0.6);
-}
-.mustache-l4 > div:nth-child(1){
-  transform: scale(0.3);
-  margin-right: -2px;
-}
-
-
-
-.noseMustache-left{
+.noseMustache-left, .noseMustache-right{
   position: relative;
-  top: 232px;
-  left: 36%;
   width: 55px;
   height: 14px;
   transform: rotate(-35deg);
@@ -401,21 +225,14 @@ body {
   border-bottom-left-radius: 50% 100%;
   z-index: -1;
 }
+.noseMustache-left{
+  top: 232px;
+  left: 36%;
+}
 .noseMustache-right{
-  position: relative;
-  top: 218px;
-  left: 49%;
-  width: 55px;
-  height: 14px;
-  transform: rotate(215deg);
-  border: 3px solid black;
-  border-top: transparent;
-  border-right: transparent;
-  border-bottom: transparent;
-  background: #FFFD78;
-  border-top-left-radius: 50% 100%;
-  border-bottom-left-radius: 50% 100%;
-  z-index: -1;
+  top: 220px;
+  left: 50%;
+  transform: rotate(-140deg);
 }
 .noseMustache-left > div {
   position: absolute;
@@ -443,8 +260,19 @@ body {
   transform: rotate(-35deg);
   background: #FFFD78;
   border: 3px solid black;
-  /*border-right: transparent;*/
-  /*border-bottom: transparent;*/
+  border-top-left-radius: 60% 60%;
+  border-bottom-left-radius: 70% 80%;
+  z-index: -2;
+}
+.rightCheek {
+  position: relative;
+  top: 131px;
+  left: 54%;
+  width: 70px;
+  height: 45px;
+  transform: rotate(215deg);
+  background: #FFFD78;
+  border: 3px solid black;
   border-top-left-radius: 60% 60%;
   border-bottom-left-radius: 70% 80%;
   z-index: -2;
@@ -512,19 +340,4 @@ body {
   border-top: 5px solid black;
   border-left: 3px solid transparent;
   border-right: 3px solid transparent;
-}
-.rightCheek {
-  position: relative;
-  top: 131px;
-  left: 54%;
-  width: 70px;
-  height: 45px;
-  transform: rotate(215deg);
-  background: #FFFD78;
-  border: 3px solid black;
-  /*border-right: transparent;*/
-  /*border-bottom: transparent;*/
-  border-top-left-radius: 60% 60%;
-  border-bottom-left-radius: 70% 80%;
-  z-index: -2;
 }
