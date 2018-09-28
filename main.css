@@ -137,7 +137,7 @@ body {
   border-radius: 50%;
   margin-left: -28px;
 }
-.mustache-r1, .mustache-r2, .mustache-r3, .mustache-r4{
+.mustache-r1, .mustache-r2, .mustache-r3, .mustache-r4, .mustache-l1, .mustache-l2, .mustache-l3, .mustache-l4{
   display: flex;
   position: absolute;
   top: 80px;
@@ -146,13 +146,50 @@ body {
 .mustache-r1{
   top: 80px;
   right: 3px;
-  transform: rotate(-11deg);
+  transform: rotate(-6deg);
 }
 .mustache-r2{
   top: 23px;
   right: 25px;
   transform: rotate(-30deg);
 }
+.mustache-r3{
+  top: 154px;
+  right: 4px;
+  transform: rotate(13deg);
+}
+.mustache-r4{
+  top: 230px;
+  right: 49px;
+  transform: rotate(46deg);
+}
+
+.mustache-l1{
+  top: 23px;
+  left: 25px;
+  right: unset;
+  transform: rotate(210deg);
+}
+
+.mustache-l2{
+  top: 80px;
+  left: 3px;
+  right: unset;
+  transform: rotate(186deg);
+}
+.mustache-l3{
+  top: 147px;
+  left: 3px;
+  right: unset;
+  transform: rotate(170deg);
+}
+.mustache-l4{
+  top: 230px;
+  left: 49px;
+  right: unset;
+  transform: rotate(136deg);
+}
+
 .mustache-r2 > div{
   width: 12px;
   height: 55px;
@@ -174,7 +211,7 @@ body {
   transform: scale(0.6);
 }
 .mustache-r2 > div:nth-child(1){
-  transform: scale(0.3);
+  transform: scale(0.4);
   margin-right: -2px;
 }
 
@@ -203,6 +240,150 @@ body {
   transform: scale(0.3);
   margin-right: -2px;
 }
+
+.mustache-r3> div {
+  width: 12px;
+  height: 55px;
+  background: black;
+  border-bottom-right-radius: 220%;
+  border-bottom-left-radius: 302%;
+  border-top-right-radius: 70px 140px;
+  border-top-left-radius: 10%;
+
+}
+.mustache-r3 > div:nth-child(4){
+
+}
+.mustache-r3 > div:nth-child(3){
+  transform: scale(0.8);
+}
+.mustache-r3 > div:nth-child(2){
+  transform: scale(0.6);
+}
+.mustache-r3 > div:nth-child(1){
+  transform: scale(0.3);
+  margin-right: -2px;
+}
+
+.mustache-r4> div {
+  width: 12px;
+  height: 55px;
+  background: black;
+  border-bottom-right-radius: 220%;
+  border-bottom-left-radius: 302%;
+  border-top-right-radius: 70px 140px;
+  border-top-left-radius: 10%;
+
+}
+.mustache-r4 > div:nth-child(4){
+
+}
+.mustache-r4 > div:nth-child(3){
+  transform: scale(0.8);
+}
+.mustache-r4 > div:nth-child(2){
+  transform: scale(0.6);
+}
+.mustache-r4 > div:nth-child(1){
+  transform: scale(0.3);
+  margin-right: -2px;
+}
+
+.mustache-l1> div {
+  width: 12px;
+  height: 55px;
+  background: black;
+  border-bottom-right-radius: 220%;
+  border-bottom-left-radius: 302%;
+  border-top-right-radius: 70px 140px;
+  border-top-left-radius: 10%;
+
+}
+.mustache-l1 > div:nth-child(4){
+
+}
+.mustache-l1 > div:nth-child(3){
+  transform: scale(0.8);
+}
+.mustache-l1 > div:nth-child(2){
+  transform: scale(0.6);
+}
+.mustache-l1 > div:nth-child(1){
+  transform: scale(0.4);
+  margin-right: -2px;
+}
+
+.mustache-l2> div {
+  width: 12px;
+  height: 55px;
+  background: black;
+  border-bottom-right-radius: 220%;
+  border-bottom-left-radius: 302%;
+  border-top-right-radius: 70px 140px;
+  border-top-left-radius: 10%;
+
+}
+.mustache-l2 > div:nth-child(4){
+
+}
+.mustache-l2 > div:nth-child(3){
+  transform: scale(0.8);
+}
+.mustache-l2 > div:nth-child(2){
+  transform: scale(0.6);
+}
+.mustache-l2 > div:nth-child(1){
+  transform: scale(0.3);
+  margin-right: -2px;
+}
+.mustache-l3> div {
+  width: 12px;
+  height: 55px;
+  background: black;
+  border-bottom-right-radius: 220%;
+  border-bottom-left-radius: 302%;
+  border-top-right-radius: 70px 140px;
+  border-top-left-radius: 10%;
+
+}
+.mustache-l3 > div:nth-child(4){
+
+}
+.mustache-l3 > div:nth-child(3){
+  transform: scale(0.8);
+}
+.mustache-l3 > div:nth-child(2){
+  transform: scale(0.6);
+}
+.mustache-l3 > div:nth-child(1){
+  transform: scale(0.3);
+  margin-right: -2px;
+}
+.mustache-l4> div {
+  width: 12px;
+  height: 55px;
+  background: black;
+  border-bottom-right-radius: 220%;
+  border-bottom-left-radius: 302%;
+  border-top-right-radius: 70px 140px;
+  border-top-left-radius: 10%;
+
+}
+.mustache-l4 > div:nth-child(4){
+
+}
+.mustache-l4 > div:nth-child(3){
+  transform: scale(0.8);
+}
+.mustache-l4 > div:nth-child(2){
+  transform: scale(0.6);
+}
+.mustache-l4 > div:nth-child(1){
+  transform: scale(0.3);
+  margin-right: -2px;
+}
+
+
 
 .noseMustache-left{
   position: relative;
