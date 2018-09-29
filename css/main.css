@@ -15,11 +15,25 @@
 body {
   height: 100vh;
   display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.code-wrapper{
+  border: 1px solid red;
+  flex: 1;
+  height: 50%;
+  width: 100%;
+}
+.preview-wrapper{
+  border: 1px solid blue;
+  flex: 1;
+  height: 50%;
+  width: 100%;
+  display: flex;
   justify-content: center;
   align-items: center;
   background: #FBA91A;
 }
-
 .Garfield {
   position: relative;
   width: 370px;
@@ -36,7 +50,9 @@ body {
   border-top-right-radius: 35% 15%;
   border-bottom-left-radius: 55% 50%;
   overflow: hidden;
+  z-index: 2;
 }
+
 .leftEye .eyeball{
   width: 24px;
   height: 10px;
@@ -48,6 +64,7 @@ body {
   border-bottom-right-radius: 50% 100%;
   z-index: 1;
 }
+
 .leftEye::before{
   content: '';
   position: absolute;
@@ -57,11 +74,12 @@ body {
   right: -10px;
   transform: rotate(3deg);
   border-bottom: 4px solid black;
-
   border-bottom-left-radius: 100px 5%;
   border-top-left-radius: 0 5%;
   border-top-right-radius: 0 5%;
+  z-index: 1;
 }
+
 .leftEye:after{
   content: '';
   position: absolute;
@@ -71,8 +89,8 @@ body {
   right: 2px;
   transform: rotate(4deg);
   background: white;
-  z-index: -1;
 }
+
 .rightEye{
   position: absolute;
   /*消除中间border重复部分*/
@@ -87,7 +105,9 @@ body {
   border-top-left-radius: 35% 15%;
   border-bottom-right-radius: 55% 50%;
   overflow: hidden;
+  z-index: 2;
 }
+
 .rightEye .eyeball {
   width: 24px;
   height: 10px;
@@ -99,6 +119,7 @@ body {
   border-bottom-right-radius: 50% 100%;
   z-index: 1;
 }
+
 .rightEye::before{
   content: '';
   position: absolute;
@@ -108,11 +129,12 @@ body {
   right: 10px;
   transform: rotate(-3deg);
   border-bottom: 4px solid black;
-
   border-bottom-right-radius: 100px 5%;
   border-top-left-radius: 0 5%;
   border-top-right-radius: 0 5%;
+  z-index: 1;
 }
+
 .rightEye:after{
   content: '';
   position: absolute;
@@ -122,7 +144,6 @@ body {
   right: -2px;
   transform: rotate(-5deg);
   background: white;
-  z-index: -1;
 }
 
 .nose{
@@ -135,13 +156,16 @@ body {
   top: 198px;
   border-radius: 50%;
   margin-left: -28px;
+  z-index: 3;
 }
+
 .mustache-r1, .mustache-r2, .mustache-r3, .mustache-r4, .mustache-l1, .mustache-l2, .mustache-l3, .mustache-l4{
   display: flex;
   position: absolute;
   top: 80px;
   right: 0;
 }
+
 div.special, div.sm1, div.sm2, div.sm3, div.sm4{
   width: 12px;
   height: 55px;
@@ -152,21 +176,25 @@ div.special, div.sm1, div.sm2, div.sm3, div.sm4{
   border-top-left-radius: 10%;
 
 }
+
 .mustache-r1{
   top: 23px;
   right: 25px;
   transform: rotate(-30deg);
- }
+}
+
 .mustache-r2{
   top: 80px;
   right: 3px;
   transform: rotate(-6deg);
 }
+
 .mustache-r3{
   top: 154px;
   right: 4px;
   transform: rotate(13deg);
 }
+
 .mustache-r4{
   top: 230px;
   right: 49px;
@@ -178,35 +206,42 @@ div.special, div.sm1, div.sm2, div.sm3, div.sm4{
   right: unset;
   transform: rotate(210deg);
 }
+
 .mustache-l2{
   top: 80px;
   left: 3px;
   right: unset;
   transform: rotate(186deg);
 }
+
 .mustache-l3{
   top: 147px;
   left: 3px;
   right: unset;
   transform: rotate(170deg);
 }
+
 .mustache-l4{
   top: 230px;
   left: 49px;
   right: unset;
   transform: rotate(136deg);
 }
+
 div.special{
   transform: scale(0.4);
   margin-right: -2px;
 }
+
 div.sm1{
   transform: scale(0.3);
   margin-right: -2px;
 }
+
 div.sm2{
   transform: scale(0.6);
 }
+
 div.sm3{
   transform: scale(0.8);
 }
@@ -223,17 +258,20 @@ div.sm3{
   background: #FFFD78;
   border-top-left-radius: 50% 100%;
   border-bottom-left-radius: 50% 100%;
-  z-index: -1;
+  z-index: 1;
 }
+
 .noseMustache-left{
   top: 232px;
   left: 36%;
 }
+
 .noseMustache-right{
   top: 220px;
   left: 50%;
   transform: rotate(-140deg);
 }
+
 .noseMustache-left > div {
   position: absolute;
   width: 30px;
@@ -242,6 +280,7 @@ div.sm3{
   bottom: 0;
   right: 0;
 }
+
 .noseMustache-right > div {
   position: absolute;
   width: 30px;
@@ -262,8 +301,8 @@ div.sm3{
   border: 3px solid black;
   border-top-left-radius: 60% 60%;
   border-bottom-left-radius: 70% 80%;
-  z-index: -2;
 }
+
 .rightCheek {
   position: relative;
   top: 131px;
@@ -275,8 +314,8 @@ div.sm3{
   border: 3px solid black;
   border-top-left-radius: 60% 60%;
   border-bottom-left-radius: 70% 80%;
-  z-index: -2;
 }
+
 .whiskerL1{
   position: absolute;
   top: 220px;
@@ -286,8 +325,8 @@ div.sm3{
   border-top: 5px solid black;
   border-left: 3px solid transparent;
   border-right: 3px solid transparent;
-
 }
+
 .whiskerL2{
   position: absolute;
   top: 230px;
@@ -298,6 +337,7 @@ div.sm3{
   border-left: 3px solid transparent;
   border-right: 3px solid transparent;
 }
+
 .whiskerL3{
   position: absolute;
   top: 242px;
@@ -309,7 +349,6 @@ div.sm3{
   border-right: 3px solid transparent;
 }
 
-
 .whiskerR1{
   position: absolute;
   top: 220px;
@@ -319,8 +358,8 @@ div.sm3{
   border-top: 5px solid black;
   border-left: 3px solid transparent;
   border-right: 3px solid transparent;
-
 }
+
 .whiskerR2{
   position: absolute;
   top: 230px;
@@ -331,6 +370,7 @@ div.sm3{
   border-left: 3px solid transparent;
   border-right: 3px solid transparent;
 }
+
 .whiskerR3{
   position: absolute;
   top: 242px;
