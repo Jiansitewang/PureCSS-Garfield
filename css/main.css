@@ -1,6 +1,6 @@
 * {
-  margin: 0px;
-  padding: 0px;
+  margin: 0;
+  padding: 0;
   box-sizing: border-box;
 }
 
@@ -39,111 +39,79 @@ body {
   width: 370px;
   height: 310px;
 }
-
-.leftEye{
+.leftEye, .rightEye{
   position: absolute;
   border: 3px solid black;
   height: 214px;
   width: 130px;
+  overflow: hidden;
+  z-index: 2;
+}
+.leftEye{
   right: 50%;
   border-top-left-radius: 65% 50%;
   border-top-right-radius: 35% 15%;
   border-bottom-left-radius: 55% 50%;
-  overflow: hidden;
-  z-index: 2;
 }
-
-.leftEye .eyeball{
+.rightEye{
+  left: 49.5%;
+  border-top-right-radius: 65% 50%;
+  border-top-left-radius: 35% 15%;
+  border-bottom-right-radius: 55% 50%;
+}
+.eyeball{
   width: 24px;
   height: 10px;
   position: absolute;
   background: black;
-  right: 4px;
   top: 173px;
   border-bottom-left-radius: 50% 100%;
   border-bottom-right-radius: 50% 100%;
   z-index: 1;
 }
-
-.leftEye::before{
+.leftEye .eyeball{
+  right: 4px;
+}
+.rightEye .eyeball {
+  left: 4px;
+}
+.leftEye::before, .rightEye::before{
   content: '';
   position: absolute;
   height: 214px;
   width: 130px;
   top: -41px;
-  right: -10px;
-  transform: rotate(3deg);
   border-bottom: 4px solid black;
-  border-bottom-left-radius: 100px 5%;
   border-top-left-radius: 0 5%;
   border-top-right-radius: 0 5%;
   z-index: 1;
 }
+.leftEye::before{
+  right: -10px;
+  transform: rotate(3deg);
+  border-bottom-left-radius: 100px 5%;
+}
+.rightEye::before{
+  right: 10px;
+  transform: rotate(-3deg);
+  border-bottom-right-radius: 100px 5%;
+}
 
-.leftEye:after{
+.leftEye:after, .rightEye:after{
   content: '';
   position: absolute;
   height: 214px;
   width: 130px;
   top: 169px;
+  background: white;
+}
+.leftEye:after{
   right: 2px;
   transform: rotate(4deg);
-  background: white;
 }
-
-.rightEye{
-  position: absolute;
-  /*消除中间border重复部分*/
-  border-left: 3px solid black;
-  border-top: 3px solid black;
-  border-right: 3px solid black;
-  border-bottom: 3px solid black;
-  height: 214px;
-  width: 130px;
-  left: 49.5%;
-  border-top-right-radius: 65% 50%;
-  border-top-left-radius: 35% 15%;
-  border-bottom-right-radius: 55% 50%;
-  overflow: hidden;
-  z-index: 2;
-}
-
-.rightEye .eyeball {
-  width: 24px;
-  height: 10px;
-  position: absolute;
-  background: black;
-  left: 4px;
-  top: 173px;
-  border-bottom-left-radius: 50% 100%;
-  border-bottom-right-radius: 50% 100%;
-  z-index: 1;
-}
-
-.rightEye::before{
-  content: '';
-  position: absolute;
-  height: 214px;
-  width: 130px;
-  top: -41px;
-  right: 10px;
-  transform: rotate(-3deg);
-  border-bottom: 4px solid black;
-  border-bottom-right-radius: 100px 5%;
-  border-top-left-radius: 0 5%;
-  border-top-right-radius: 0 5%;
-  z-index: 1;
-}
-
 .rightEye:after{
-  content: '';
-  position: absolute;
-  height: 214px;
-  width: 130px;
-  top: 168px;
   right: -2px;
   transform: rotate(-5deg);
-  background: white;
 }
 
 .nose{
@@ -174,7 +142,6 @@ div.special, div.sm1, div.sm2, div.sm3, div.sm4{
   border-bottom-left-radius: 302%;
   border-top-right-radius: 70px 140px;
   border-top-left-radius: 10%;
-
 }
 
 .mustache-r1{
@@ -182,19 +149,16 @@ div.special, div.sm1, div.sm2, div.sm3, div.sm4{
   right: 25px;
   transform: rotate(-30deg);
 }
-
 .mustache-r2{
   top: 80px;
   right: 3px;
   transform: rotate(-6deg);
 }
-
 .mustache-r3{
   top: 154px;
   right: 4px;
   transform: rotate(13deg);
 }
-
 .mustache-r4{
   top: 230px;
   right: 49px;
@@ -206,21 +170,18 @@ div.special, div.sm1, div.sm2, div.sm3, div.sm4{
   right: unset;
   transform: rotate(210deg);
 }
-
 .mustache-l2{
   top: 80px;
   left: 3px;
   right: unset;
   transform: rotate(186deg);
 }
-
 .mustache-l3{
   top: 147px;
   left: 3px;
   right: unset;
   transform: rotate(170deg);
 }
-
 .mustache-l4{
   top: 230px;
   left: 49px;
@@ -232,16 +193,13 @@ div.special{
   transform: scale(0.4);
   margin-right: -2px;
 }
-
 div.sm1{
   transform: scale(0.3);
   margin-right: -2px;
 }
-
 div.sm2{
   transform: scale(0.6);
 }
-
 div.sm3{
   transform: scale(0.8);
 }
@@ -260,12 +218,10 @@ div.sm3{
   border-bottom-left-radius: 50% 100%;
   z-index: 1;
 }
-
 .noseMustache-left{
   top: 232px;
   left: 36%;
 }
-
 .noseMustache-right{
   top: 220px;
   left: 50%;
@@ -280,7 +236,6 @@ div.sm3{
   bottom: 0;
   right: 0;
 }
-
 .noseMustache-right > div {
   position: absolute;
   width: 30px;
@@ -289,95 +244,55 @@ div.sm3{
   top: 0;
   right: 0;
 }
-
-.leftCheek {
+.leftCheek, .rightCheek{
   position: relative;
+  width: 70px;
+  height: 45px;
+  background: #FFFD78;
+  border: 3px solid black;
+  border-top-left-radius: 60% 60%;
+  border-bottom-left-radius: 70% 80%;
+}
+.leftCheek {
   top: 178px;
   left: 27%;
-  width: 70px;
-  height: 45px;
   transform: rotate(-35deg);
-  background: #FFFD78;
-  border: 3px solid black;
-  border-top-left-radius: 60% 60%;
-  border-bottom-left-radius: 70% 80%;
 }
-
 .rightCheek {
-  position: relative;
   top: 131px;
   left: 54%;
-  width: 70px;
-  height: 45px;
   transform: rotate(215deg);
-  background: #FFFD78;
-  border: 3px solid black;
-  border-top-left-radius: 60% 60%;
-  border-bottom-left-radius: 70% 80%;
 }
 
-.whiskerL1{
+.whiskerL1, .whiskerL2, .whiskerL3, .whiskerR1, .whiskerR2, .whiskerR3{
   position: absolute;
+  width: 0;
+  height: 0;
+  border-top: 5px solid black;
+  border-left: 3px solid transparent;
+  border-right: 3px solid transparent;
+}
+.whiskerL1{
   top: 220px;
   left: 33%;
-  width: 0;
-  height: 0;
-  border-top: 5px solid black;
-  border-left: 3px solid transparent;
-  border-right: 3px solid transparent;
 }
-
 .whiskerL2{
-  position: absolute;
   top: 230px;
   left: 30%;
-  width: 0;
-  height: 0;
-  border-top: 5px solid black;
-  border-left: 3px solid transparent;
-  border-right: 3px solid transparent;
 }
-
 .whiskerL3{
-  position: absolute;
   top: 242px;
   left: 31%;
-  width: 0;
-  height: 0;
-  border-top: 5px solid black;
-  border-left: 3px solid transparent;
-  border-right: 3px solid transparent;
 }
-
 .whiskerR1{
-  position: absolute;
   top: 220px;
   right: 33%;
-  width: 0;
-  height: 0;
-  border-top: 5px solid black;
-  border-left: 3px solid transparent;
-  border-right: 3px solid transparent;
 }
-
 .whiskerR2{
-  position: absolute;
   top: 230px;
   right: 30%;
-  width: 0;
-  height: 0;
-  border-top: 5px solid black;
-  border-left: 3px solid transparent;
-  border-right: 3px solid transparent;
 }
-
 .whiskerR3{
-  position: absolute;
   top: 242px;
   right: 31%;
-  width: 0;
-  height: 0;
-  border-top: 5px solid black;
-  border-left: 3px solid transparent;
-  border-right: 3px solid transparent;
 }
