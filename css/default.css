@@ -22,6 +22,13 @@ body {
   height: 50vh;
   overflow: hidden;
 }
+.preview{
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 50vh;
+}
 .token.comment{
   color: black;
 }

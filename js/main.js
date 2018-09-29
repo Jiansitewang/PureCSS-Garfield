@@ -9,7 +9,7 @@ let result = `
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  transition: all .5s;
+  transition: all 1s;
 }
 #code {
   padding: 32px;
@@ -31,16 +31,21 @@ let result = `
 
 /*把我们写代码和画画的地方分开*/
 .code-wrapper{
-  color: white;
-  border: 10px solid #36383F;
   flex: 1;
   height: 50%;
-  width: 100%;
+  width: 96%;
+  margin-top: 16px;
+  margin-bottom: 16px;
+  margin-left: 2%;
+  margin-right: 2%;
   background: #2D2D2D;
-  box-shadow: 10px 10px 29px 1px rgba(173,164,173,0.58); 
+  color: white;
+  box-shadow: 6px 4px 5px 0px rgba(0,0,0,0.75);
+}
+body{
+  background: #999999;
 }
 .preview-wrapper{
-  border: 10px solid #36383F;
   flex: 1;
   height: 50%;
   width: 100%;
@@ -48,7 +53,6 @@ let result = `
   justify-content: center;
   align-items: center;
   background: #FBA91A;
-  box-shadow: 10px 10px 29px 1px rgba(173,164,173,0.58);
 }
 /*现在我们就开始画吧，先是加菲猫的眼眶*/
 .leftEye, .rightEye{
@@ -302,6 +306,6 @@ let id = setInterval(()=> {
   if (n >= result.length){
     window.clearInterval(id)
   }
-},10)
+},20)
 
 
