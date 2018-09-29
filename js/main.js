@@ -1,4 +1,5 @@
-let result = `
+!function () {
+  let code = `
 /*Hi，我是王凯。
  *今天给大家用纯css来画一只加菲猫
  */
@@ -295,17 +296,24 @@ div.sm3{
   谢谢观看！
 */
 `
-let domCode = document.querySelector('#code')
-let domStyle = document.querySelector('#styleTag')
-let n = 0
-let id = setInterval(()=> {
-  n += 1
-  domCode.innerHTML = Prism.highlight(result.substring(0,n), Prism.languages.css, 'css')
-  domStyle.innerHTML = result.substring(0,n)
-  domCode.scrollTop = domCode.scrollHeight
-  if (n >= result.length){
-    window.clearInterval(id)
+  function writeCSS(prefix,code,fn) {
+    let domCode = document.querySelector('#code')
+    let domStyle = document.querySelector('#styleTag')
+    let n = 0
+    let id = setInterval(()=> {
+      n += 1
+      domCode.innerHTML = Prism.highlight(code.substring(0,n), Prism.languages.css, 'css')
+      domStyle.innerHTML = code.substring(0,n)
+      domCode.scrollTop = domCode.scrollHeight
+      if (n >= code.length){
+        window.clearInterval(id)
+        fn && fn.call()
+      }
+    },20)
   }
-},20)
+  writeCSS('',code)
+
+}.call()
+
 
 
