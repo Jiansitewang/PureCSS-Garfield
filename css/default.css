@@ -85,3 +85,26 @@ body {
   left: 54%;
   transform: rotate(215deg);
 }
+.actions{
+  position: absolute;
+  right: 32px;
+  top: 32px;
+  display: flex;
+  flex-direction: column;
+}
+.actions>button{
+  color: white;
+  margin: 8px;
+  padding: 8px 10px;
+  border: 2px solid #C5C8D4;
+  background: black;
+  transition: all 0.5s;
+}
+.actions>button:hover{
+  color: black;
+  background: white;
+  border: 2px solid black;
+}
+.actions>button:focus{
+  outline: 1px solid white;
+}

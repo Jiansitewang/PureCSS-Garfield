@@ -296,22 +296,43 @@ div.sm3{
   谢谢观看！
 */
 `
-  function writeCSS(prefix,code,fn) {
+  let duration = 20
+  function writeCSS(code,fn) {
     let domCode = document.querySelector('#code')
     let domStyle = document.querySelector('#styleTag')
     let n = 0
-    let id = setInterval(()=> {
+    setTimeout(function repeat(){
       n += 1
       domCode.innerHTML = Prism.highlight(code.substring(0,n), Prism.languages.css, 'css')
       domStyle.innerHTML = code.substring(0,n)
       domCode.scrollTop = domCode.scrollHeight
-      if (n >= code.length){
-        window.clearInterval(id)
+      if (n < code.length){
+        setTimeout(repeat,duration)
+      }else {
         fn && fn.call()
       }
-    },20)
+    },duration)
   }
-  writeCSS('',code)
+  writeCSS(code)
+
+  function changeSpeed() {
+    let xx = document.querySelectorAll('button')
+    for(let i=0; i<xx.length;i++){
+      xx[i].onclick = function() {
+        if(xx[i].className === 'slow'){
+          duration = 100
+        }else if(xx[i].className === 'normal'){
+          duration = 50
+        }else{
+          duration = 0
+        }
+      }
+    }
+  }
+  changeSpeed()
+
+
+
 
 }.call()
 
